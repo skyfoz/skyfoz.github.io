@@ -1,4 +1,4 @@
 document.getElementById("logo").addEventListener("click", function() {
-  location.href = "/src/dev/main.html";});
+  location.href = "/src/dev/index.html";});
 
   
