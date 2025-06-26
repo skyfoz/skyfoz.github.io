@@ -1,0 +1,175 @@
+header {
+    color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    position: sticky;
+}
+
+.square {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    z-index: 999;
+}
+
+.gauche {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    padding-left: 5%; 
+    gap: 1vh; 
+}
+
+.stretch {
+    justify-content: stretch;
+    flex: 1 1 0%;
+}
+
+.droite {
+    padding-right: 2vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+.btn {
+    transition-timing-function: ease-out;
+    outline-color: #ccc;
+    border-radius: 20px;
+    color:rgb(29, 29, 29);
+    transition: 0.5s;
+    background-color: #ccc;
+    font-family: 'Cabin';
+    align-self: center;
+    max-height: 4vh;
+    padding: 5px;
+    display: inline-flex;
+    min-width: 1vh;
+    align-items: center;
+    justify-content: center;
+    outline-width: 4px;
+    outline-offset: -0.4vh;
+    outline-style: solid;
+    font-size: 2vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn:hover {background-color: rgb(26, 26, 26); color:#ffffff; outline-color: #ffffff;}
+
+.side {
+    color: #d1d1d1;
+    position: fixed;
+    overflow: hidden;
+    top: calc(10% - 1px);
+    left: 0%;
+    margin: 0px;
+    height: 91vh;
+    width: 15%;
+    z-index: 2;
+    background-color: #141414;
+    display: table-column;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #303030;
+    z-index: 998;
+}
+
+.firstrow {
+    display: flex;  
+    margin-left: 0.5vw;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.row {
+    display: flex;
+    background-color: #141414;
+    color: #ccc;
+    font-size: 1.5vh;
+    background: none;
+    border: none;
+    padding-right: 100%;
+}
+
+.row:hover {background-color: #24262b;}
+
+#current {
+    background-color: #393844;
+}
+
+.textRow {
+    padding-left: 2vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bold {
+    font-family: 'Cabin';
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main#dev {
+    padding-top: 10vh;
+    margin-left: 17vw;
+    color: rgb(172, 172, 172);
+}
+
+div#logo {
+    background: none;
+    border: none;
+    font-family: "renogare";
+    font-size: 6vh;
+    filter: drop-shadow(0 0 0.2rem rgb(64, 64, 77));
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.point {
+    height: 2vh;
+    width: 2vh;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.3s;
+    outline: solid;
+    outline-width: 0.3vh;
+    outline-offset: -0.2vh;
+    outline-color: #ffffff;
+}
+
+.point:hover {background-color: rgb(26, 26, 26)}
+
+#Youtube {
+    height: 4vh;
+    width: 4vh;
+    display: block;
+    transition: 0.3s;
+    filter: invert(82%) sepia(2%) saturate(0%) hue-rotate(192deg) brightness(99%) contrast(94%) drop-shadow(0 0 0.2rem rgb(26, 26, 26));
+}
+
+#Youtube:hover {filter: invert(100%) sepia(74%) saturate(0%) hue-rotate(237deg) brightness(108%) contrast(101%) drop-shadow(0 0 0.2rem rgb(68, 68, 68));}
