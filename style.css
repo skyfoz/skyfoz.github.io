@@ -112,12 +112,14 @@ header {
     background: none;
     border: none;
     padding-right: 100%;
+    cursor: pointer;
 }
 
 .row:hover {background-color: #24262b;}
 
 #current {
     background-color: #393844;
+    cursor: initial;
 }
 
 .textRow {
