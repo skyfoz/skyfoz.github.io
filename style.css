@@ -85,6 +85,14 @@ header {
     z-index: 998;
 }
 
+.line {
+    position: fixed;
+    margin-left: 1.5%;
+    width: 1px;
+    height: 2.3vh;
+    background-color: #616161;
+}
+
 .firstrow {
     display: flex;  
     margin-left: 0.5vw;
