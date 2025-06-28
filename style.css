@@ -133,6 +133,8 @@ header {
 
 body {
     background-color: rgb(36, 36, 36);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -140,7 +142,7 @@ body::-webkit-scrollbar {
 }
 
 main#dev {
-    padding-top: 10vh;
+    padding-top: 9vh;
     margin-left: 17vw;
     color: rgb(172, 172, 172);
 }
@@ -158,6 +160,17 @@ div#logo {
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
+}
+
+.path {
+    position: fixed;
+    color: #b8b8b8;
+    top: 10vh;
+    left: 17vw;
+    width: 83vw;
+    height: 2.5vh;
+    background-color: #242424;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .point {
