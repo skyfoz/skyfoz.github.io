@@ -142,9 +142,14 @@ body::-webkit-scrollbar {
 }
 
 main#dev {
-    padding-top: 9vh;
+    padding-top: 11vh;
     margin-left: 17vw;
     color: rgb(172, 172, 172);
+    font-family: "Consolas";
+}
+
+h1 {
+    color: #e6e6e6;
 }
 
 div#logo {
