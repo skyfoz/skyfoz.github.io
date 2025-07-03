@@ -156,7 +156,7 @@ h1 {
 div#logo {
     background: none;
     border: none;
-    font-family: "renogare";
+    font-family: renogare, sans-serif;
     font-size: 6vh;
     filter: drop-shadow(0 0 0.2rem rgb(64, 64, 77));
     -webkit-touch-callout: none;
