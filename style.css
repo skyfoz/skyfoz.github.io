@@ -44,7 +44,7 @@ header {
     color:rgb(29, 29, 29);
     transition: 0.5s;
     background-color: #ccc;
-    font-family: 'Cabin', sans-serif;
+    font-family: Cabin, sans-serif;
     align-self: center;
     max-height: 4vh;
     padding: 5px;
@@ -129,7 +129,7 @@ header {
 }
 
 .bold {
-    font-family: 'Cabin', sans-serif;
+    font-family: Cabin, sans-serif;
 }
 
 body {
