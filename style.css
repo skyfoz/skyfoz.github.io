@@ -44,7 +44,7 @@ header {
     color:rgb(29, 29, 29);
     transition: 0.5s;
     background-color: #ccc;
-    font-family: 'Cabin';
+    font-family: 'Cabin', sans-serif;
     align-self: center;
     max-height: 4vh;
     padding: 5px;
@@ -129,7 +129,7 @@ header {
 }
 
 .bold {
-    font-family: 'Cabin';
+    font-family: 'Cabin', sans-serif;
 }
 
 body {
@@ -211,4 +211,9 @@ svg {
 @font-face {
     font-family: renogare;
     src: url(/Renogare-Regular.otf);
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url(https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap);
 }
