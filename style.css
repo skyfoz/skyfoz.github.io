@@ -216,5 +216,5 @@ svg {
 @font-face {
     font-family: Cabin;
     src: url(https://fonts.googleapis.com/css2?family=Cabin:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap);
-    font-weight: bold;
+    font-weight: 700;
 }
