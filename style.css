@@ -38,34 +38,28 @@ header {
 }
 
 .btn {
-    transition-timing-function: ease-out;
-    outline-color: #ccc;
-    border-radius: 20px;
-    color:rgb(29, 29, 29);
-    transition: 0.5s;
-    background-color: #ccc;
-    font-family: Cabin, sans-serif;
-    font-weight: 700;
-    align-self: center;
-    max-height: 4vh;
-    padding: 5px;
+    all: unset; /* Réinitialise les styles pour éviter les conflits */
     display: inline-flex;
-    min-width: 1vh;
     align-items: center;
     justify-content: center;
-    outline-width: 6px;
-    outline-offset: -0.4vh;
-    outline-style: solid;
-    font-size: 2vh;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-}
 
+    font-family: Cabin, sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+    color: rgb(29, 29, 29);
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+
+    padding: 0.4em 0.8em; /* Utilise des unités relatives au texte */
+    outline: 2px solid #ccc;
+    outline-offset: 2px; /* Petit décalage pour lisibilité */
+
+    transition: all 0.3s ease-out;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
 .btn:hover {background-color: rgb(26, 26, 26); color:#ffffff; outline-color: #ffffff;}
 
 .side {
