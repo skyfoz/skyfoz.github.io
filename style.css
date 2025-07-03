@@ -52,7 +52,7 @@ header {
     min-width: 1vh;
     align-items: center;
     justify-content: center;
-    outline-width: 4px;
+    outline-width: 6px;
     outline-offset: -0.4vh;
     outline-style: solid;
     font-size: 2vh;
