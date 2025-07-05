@@ -94,7 +94,7 @@ header {
 .firstrow {
     display: flex;  
     margin-left: 0.5vw;
-    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    font-size: clamp(0.75rem, 1.25vw, 1.25rem);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
