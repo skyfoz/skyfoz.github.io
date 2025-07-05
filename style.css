@@ -107,7 +107,7 @@ header {
     color: #ccc;
     font-size: 2vh;
     background: none;
-    --side-width: 
+    --side-width: 2;
     border: none;
     padding-right: 100%;
     cursor: pointer;
