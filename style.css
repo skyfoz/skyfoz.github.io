@@ -93,7 +93,7 @@ header {
 .firstrow {
     display: flex;  
     margin-left: 0.5vw;
-    font-size: 2vw;
+    font-size: 0.5vw;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -106,7 +106,7 @@ header {
     display: flex;
     background-color: #141414;
     color: #ccc;
-    font-size: 2vw;
+    font-size: 0.5vw;
     background: none;
     --side-width: 2;
     border: none;
