@@ -64,12 +64,14 @@ header {
 
 .side {
     color: #d1d1d1;
+    display: inline;
     position: fixed;
     overflow: hidden;
     top: calc(10% - 1px);
     left: 0%;
     margin: 0px;
     height: 91vh;
+    min-width: none;
     width: 15%;
     z-index: 2;
     background-color: #141414;
@@ -104,8 +106,9 @@ header {
     display: flex;
     background-color: #141414;
     color: #ccc;
-    font-size: 1.7vh;
+    font-size: 2vh;
     background: none;
+    --side-width: 
     border: none;
     padding-right: 100%;
     cursor: pointer;
