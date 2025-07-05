@@ -52,8 +52,8 @@ header {
     cursor: pointer;
 
     padding: 0.4em 0.8em; 
-    outline: 2px solid #ccc;
-    outline-offset: 0px; 
+    outline: 5px solid #ccc;
+    outline-offset: -1px; 
 
     transition: all 0.3s ease-out;
 
