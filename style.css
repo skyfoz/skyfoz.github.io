@@ -169,6 +169,7 @@ div#logo {
 
 .path {
     position: fixed;
+    font-size: 2vh;
     color: #b8b8b8;
     top: 10vh;
     left: 17vw;
