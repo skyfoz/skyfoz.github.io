@@ -64,7 +64,6 @@ header {
 
 .side {
     color: #d1d1d1;
-    display: block;
     position: fixed;
     overflow: hidden;
     top: calc(10% - 1px);
