@@ -225,7 +225,7 @@ svg {
     src: url(https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap);
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 780px) {
     .row {
         font-size: 0.75rem;
     }
@@ -240,5 +240,9 @@ svg {
 
     #name-path {
         padding-left: calc(1vw + 135px);
+    }
+
+    .side {
+        width: 15vw;
     }
 }
