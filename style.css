@@ -243,6 +243,6 @@ svg {
     }
 
     .side {
-        width: 15vw;
+        max-width: 135px;
     }
 }
