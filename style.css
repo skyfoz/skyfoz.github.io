@@ -172,7 +172,7 @@ div#logo {
 
 .path {
     position: fixed;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     color: #b8b8b8;
     top: 10vh;
     left: 0px;
@@ -223,4 +223,22 @@ svg {
 @font-face {
     font-family: Cabin;
     src: url(https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap);
+}
+
+@media (max-width: 1024px) {
+    .row {
+        font-size: 0.75rem;
+    }
+
+    .firstrow {
+        font-size: 0.75rem;
+    }
+
+    main#dev {
+        padding-left: calc(1vw + 135px);
+    }
+
+    #name-path {
+        padding-left: calc(1vw + 135px);
+    }
 }
