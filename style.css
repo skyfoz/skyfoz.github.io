@@ -243,10 +243,8 @@ svg {
     }
 
     .side {
-        position: absolute;
-        height: auto;
-        max-height: calc(100vh - 10vh - 3.5vh); /* Ajuste selon tes barres */
+        height: 2000px;
         overflow-y: auto;
-        width: 135px;
+        width: 137px;
     }
 }
