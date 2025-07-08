@@ -243,6 +243,9 @@ svg {
     }
 
     .side {
-        transform: translate3d(0,0,0);
+        position: absolute;
+        height: 100lvh;
+        overflow-y: auto;
+        width: 137px;
     }
 }
