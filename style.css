@@ -244,7 +244,7 @@ svg {
 
     .side {
         position: absolute;
-        height: 100lvh;
+        height: 2000px;
         overflow-y: auto;
         width: 137px;
     }
