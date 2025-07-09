@@ -243,9 +243,9 @@ svg {
     }
 
     .side {
-        position: fixed;
+        position: absolute;
         height: 2000px;
         overflow-y: auto;
-        width: 15%;
+        width: 137px;
     }
 }
