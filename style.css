@@ -205,15 +205,9 @@ svg {
     height: 3vh;
 }
 
-#Youtube {
-    height: 4vh;
-    width: 4vh;
-    display: block;
-    transition: 0.3s;
-    filter: invert(82%) sepia(2%) saturate(0%) hue-rotate(192deg) brightness(99%) contrast(94%) drop-shadow(0 0 0.2rem rgb(26, 26, 26));
+.menu {
+    display: none;
 }
-
-#Youtube:hover {filter: invert(100%) sepia(74%) saturate(0%) hue-rotate(237deg) brightness(108%) contrast(101%) drop-shadow(0 0 0.2rem rgb(68, 68, 68));}
 
 @font-face {
     font-family: renogare;
@@ -233,13 +227,20 @@ svg {
     .firstrow {
         font-size: 0.75rem;
     }
+    
+    .menu {
+        display: block;
+    }
+
+    .side {
+        display: none;
+    }
 
     main#dev {
-        padding-left: calc(1vw + 135px);
+        padding-left: 10px;
     }
 
     #name-path {
-        padding-left: calc(1vw + 135px);
+        padding-left: 25px;
     }
-    
 }
