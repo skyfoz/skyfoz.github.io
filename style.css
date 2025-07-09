@@ -242,4 +242,8 @@ svg {
     #name-path {
         padding-left: calc(1vw + 135px);
     }
+
+    .side {
+        width: 137px;
+    }
 }
