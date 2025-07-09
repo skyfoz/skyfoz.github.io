@@ -64,7 +64,7 @@ header {
 .btn:hover {background-color: rgb(26, 26, 26); color:#ffffff; outline-color: #ffffff;}
 
 .side {
-    position: sticky;
+    position: absolute;
     color: #d1d1d1;
     position: fixed;
     overflow: hidden;
