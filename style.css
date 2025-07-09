@@ -64,6 +64,7 @@ header {
 .btn:hover {background-color: rgb(26, 26, 26); color:#ffffff; outline-color: #ffffff;}
 
 .side {
+    position: sticky;
     color: #d1d1d1;
     position: fixed;
     overflow: hidden;
@@ -240,12 +241,5 @@ svg {
 
     #name-path {
         padding-left: calc(1vw + 135px);
-    }
-
-    .side {
-        position: absolute;
-        height: 2000px;
-        overflow-y: auto;
-        width: 137px;
     }
 }
