@@ -240,8 +240,8 @@ svg {
     }
 
     .side {
-        display: none;
         width: 100%;
+        right: 0px;
     }
 
     main#dev {
