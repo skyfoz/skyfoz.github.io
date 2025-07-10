@@ -33,8 +33,8 @@ header {
 .droite {
     padding-right: 2vw;
     display: flex;
+    gap: 3vh;
     justify-content: flex-end;
-    gap: 1vw;
 }
 
 .btn {
@@ -109,7 +109,6 @@ header {
     color: #ccc;
     font-size: clamp(0.875rem, 1.5vw, 1.25rem);
     background: none;
-    --side-width: 2;
     border: none;
     padding-right: 100%;
     cursor: pointer;
@@ -207,6 +206,14 @@ svg {
 
 .menu {
     display: none;
+    border-radius: 20%;
+    padding: 5px;
+    height: 5vw;
+    width: 5vw;
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+    filter: drop-shadow(0 0 0.2rem rgb(26, 26, 26));
+    transition-duration: 0.5s;
 }
 
 @font-face {
