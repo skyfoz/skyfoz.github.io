@@ -228,11 +228,11 @@ svg {
 
 @media screen and (max-width: 780px) {
     .row {
-        font-size: 0.75rem;
+        font-size: 2rem;
     }
 
     .firstrow {
-        font-size: 0.75rem;
+        font-size: 2rem;
     }
     
     .menu {
@@ -250,5 +250,10 @@ svg {
 
     #name-path {
         padding-left: 25px;
+    }
+    
+    #chevron {
+        width: 40px;
+        height: 40px;
     }
 }
