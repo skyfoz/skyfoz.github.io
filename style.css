@@ -241,6 +241,7 @@ svg {
 
     .side {
         display: none;
+        width: 100%;
     }
 
     main#dev {
