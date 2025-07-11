@@ -18,7 +18,7 @@ function btnMenu() {
     btnClicked = false;
     document.getElementsByClassName("menu")[0].style.backgroundColor = 'rgb(26, 26, 26)';
     document.getElementsByClassName("menu")[0].style.filter = "drop-shadow(0 0 0.2rem rgb(26, 26, 26)";
-    document.getElementsByClassName("side")[0].style.left = "-110%";
+    document.getElementsByClassName("side")[0].style.left = "110%";
   }
 }
 
@@ -32,7 +32,7 @@ function forTestingOrUrWeird(mobileQuery) {
     }, 1);
     document.getElementsByClassName("side")[0].style.left = "0px";
   } else {
-    document.getElementsByClassName("side")[0].style.left = "-110%";
+    document.getElementsByClassName("side")[0].style.left = "110%";
     setTimeout(function(){
     document.getElementsByClassName("side")[0].style.transitionDuration = "0.5s";
     }, 1);
