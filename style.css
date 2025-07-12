@@ -170,7 +170,7 @@ div#logo {
 }
 
 .path {
-    position: sticky;
+    position: fixed;
     font-size: 2.3vh;
     color: #b8b8b8;
     top: 10vh;
