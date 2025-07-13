@@ -154,6 +154,12 @@ h1 {
     color: #e6e6e6;
 }
 
+#content {
+    white-space: pre-line;
+    font-size: 1.09rem;
+    line-height: normal;
+}
+
 div#logo {
     background: none;
     border: none;
