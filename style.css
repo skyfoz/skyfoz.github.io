@@ -146,7 +146,7 @@ body::-webkit-scrollbar {
 main#dev {
     padding-top: 11vh;
     padding-left: max(17%, calc(1vw + 135px));
-    color: rgb(172, 172, 172);
+    color: #e6e6e6;
     font-family: "Consolas";
 }
 
@@ -156,8 +156,22 @@ h1 {
 
 #content {
     white-space: pre-line;
+    padding-left: 2vw;
     font-size: 1.09rem;
-    line-height: normal;
+    line-height: 22px;
+}
+
+#lines {
+    color: #767486;
+    font-size: 1.09rem;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
 }
 
 div#logo {

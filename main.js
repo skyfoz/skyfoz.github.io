@@ -46,3 +46,20 @@ forTestingOrUrWeird(mobileQuery);
 mobileQuery.addEventListener("change", function() {
   forTestingOrUrWeird(mobileQuery);
 });
+
+function countLines() {
+   var el = document.getElementById('content');
+   var divHeight = el.offsetHeight
+   var lineHeight = 22;
+   var lines = divHeight / lineHeight;
+   var linesDoc = document.getElementById('lines');
+   for (let i=0; i < lines + 1; i++){
+    const div = document.createElement("div");
+    div.style.textAlign = "right";
+    const node = document.createTextNode(i + 1);
+    div.appendChild(node);
+    linesDoc.appendChild(div);
+   }
+}
+
+countLines()
