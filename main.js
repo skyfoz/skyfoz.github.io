@@ -53,6 +53,9 @@ function countLines() {
    var lineHeight = 22;
    var lines = divHeight / lineHeight;
    var linesDoc = document.getElementById('lines');
+   while (linesDoc.firstChild) { 
+    linesDoc.firstChild.remove(); 
+   }
    for (let i=0; i < lines + 1; i++){
     const div = document.createElement("div");
     div.style.textAlign = "right";
@@ -63,3 +66,7 @@ function countLines() {
 }
 
 countLines()
+
+window.addEventListener('resize', function(event) {
+    countLines()
+}, true);
