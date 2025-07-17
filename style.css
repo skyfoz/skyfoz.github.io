@@ -236,6 +236,11 @@ svg {
     transition-duration: 0.5s;
 }
 
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+    overflow:hidden;
+}
+
 @font-face {
     font-family: renogare;
     src: url(/Renogare-Regular.otf);

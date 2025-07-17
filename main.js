@@ -56,7 +56,7 @@ function countLines() {
    while (linesDoc.firstChild) { 
     linesDoc.firstChild.remove(); 
    }
-   for (let i=0; i < lines + 1; i++){
+   for (let i=0; i < lines; i++){
     const div = document.createElement("div");
     div.style.textAlign = "right";
     const node = document.createTextNode(i + 1);
@@ -70,3 +70,7 @@ countLines()
 window.addEventListener('resize', function(event) {
     countLines()
 }, true);
+
+document.getElementsByClassName('innerContent')[0].addEventListener('input', function(){
+   countLines()
+})
