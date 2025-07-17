@@ -73,4 +73,41 @@ window.addEventListener('resize', function(event) {
 
 document.getElementsByClassName('innerContent')[0].addEventListener('input', function(){
    countLines()
-})
+});
+
+function getCaretPosition() {
+  const selection = window.getSelection();
+  if (selection.rangeCount === 0) return null;
+  const range = selection.getRangeAt(0).cloneRange();
+  range.collapse(true);
+  const rect = range.getClientRects()[0];
+
+  if (rect) {
+
+    var contentRect = document.getElementsByClassName("innerContent")[0].getBoundingClientRect();
+    var posLines = Math.floor((rect.top - contentRect.top - 1)/22);
+    var elements = document.getElementById('lines').children;
+    for (const child of elements) {
+      child.style.color = "#767486";
+    }
+    elements.item(posLines).style.color = "#d1d1d1";
+
+    var outline = null;
+
+    if (document.getElementById("selectedLine") == null) {
+      outline = document.createElement("div");
+      outline.setAttribute("id", "selectedLine");
+      var main = document.getElementById('dev');
+      main.appendChild(outline)
+    }
+    else {
+      outline = document.getElementById("selectedLine");
+    }
+    outline.style.top = toString(posLines * 22);
+    console.log(window.getComputedStyle(document.getElementsByClassName("innerContent")[0]).getPropertyValue('top') + posLines * 22);
+  }
+}
+
+document.getElementsByClassName('innerContent')[0].addEventListener("click", function(){
+  getCaretPosition()
+}, true);
