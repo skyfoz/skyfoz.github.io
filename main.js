@@ -78,35 +78,32 @@ document.getElementsByClassName('innerContent')[0].addEventListener('input', fun
 function getCaretPosition() {
   const selection = window.getSelection();
   if (selection.rangeCount === 0) return null;
+
   const range = selection.getRangeAt(0).cloneRange();
   range.collapse(true);
+
   const rect = range.getClientRects()[0];
+  if (!rect) return;
 
-  if (rect) {
+  const contentRect = document.getElementsByClassName("innerContent")[0].getBoundingClientRect();
+  const posLines = Math.floor((rect.top - contentRect.top - 1) / 22);
 
-    var contentRect = document.getElementsByClassName("innerContent")[0].getBoundingClientRect();
-    var posLines = Math.floor((rect.top - contentRect.top - 1)/22);
-    var elements = document.getElementById('lines').children;
-    for (const child of elements) {
-      child.style.color = "#767486";
-    }
-    elements.item(posLines).style.color = "#d1d1d1";
+  const elements = document.getElementById('lines').children;
+  for (const child of elements) child.style.color = "#767486";
+  if (elements[posLines]) elements[posLines].style.color = "#d1d1d1";
 
-    var outline = null;
-
-    if (document.getElementById("selectedLine") == null) {
-      outline = document.createElement("div");
-      outline.setAttribute("id", "selectedLine");
-      var main = document.getElementById('dev');
-      main.appendChild(outline)
-    }
-    else {
-      outline = document.getElementById("selectedLine");
-    }
-    outline.style.top = toString(posLines * 22);
-    console.log(window.getComputedStyle(document.getElementsByClassName("innerContent")[0]).getPropertyValue('top') + posLines * 22);
+  let outline = document.getElementById("selectedLine");
+  if (!outline) {
+    outline = document.createElement("div");
+    outline.id = "selectedLine";
+    document.getElementById('dev').appendChild(outline);
   }
+
+  const contentTop = parseFloat(window.getComputedStyle(document.getElementsByClassName('innerContent')[0]).top) || 0;
+  const contentHeight = parseFloat(window.getComputedStyle(document.getElementsByClassName('innerContent')[0]).height) || 0;
+  outline.style.top = (contentTop + posLines * 22 - contentHeight) + "px";
 }
+
 
 document.getElementsByClassName('innerContent')[0].addEventListener("click", function(){
   getCaretPosition()

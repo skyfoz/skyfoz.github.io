@@ -242,13 +242,14 @@ svg {
 }
 
 #selectedLine {
-    position: absolute;
+    position: relative;
     height: 22px;
     width: 100%;
     border-left: 0px;
     border-right: 0px;
     border-top: solid 2px #494949;
     border-bottom: solid 2px #494949;
+    outline-offset: -1px;
 }
 
 @font-face {
