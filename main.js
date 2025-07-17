@@ -108,3 +108,5 @@ function getCaretPosition() {
 document.getElementsByClassName('innerContent')[0].addEventListener("click", function(){
   getCaretPosition()
 }, true);
+
+document.getElementsByClassName("innerContent")[0].addEventListener('keyup', function() { getCaretPosition();}, true);
