@@ -65,14 +65,13 @@ function countLines() {
    }
 }
 
-countLines()
-
 window.addEventListener('resize', function(event) {
     countLines()
 }, true);
 
 document.getElementsByClassName('innerContent')[0].addEventListener('input', function(){
    countLines()
+   getCaretPosition();
 });
 
 function getCaretPosition() {
@@ -110,3 +109,9 @@ document.getElementsByClassName('innerContent')[0].addEventListener("click", fun
 }, true);
 
 document.getElementsByClassName("innerContent")[0].addEventListener('keyup', function() { getCaretPosition();}, true);
+
+window.addEventListener("resize", function() {
+  this.document.getElementById('selectedLine').remove();
+})
+
+setTimeout(countLines(), 50);

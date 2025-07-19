@@ -17,6 +17,10 @@ header {
     z-index: 999;
 }
 
+#art.square {
+    background-color: rgb(250, 245, 236);
+}
+
 .gauche {
     justify-content: flex-start;
     display: flex;
@@ -62,6 +66,16 @@ header {
     -webkit-user-select: none;
 }
 .btn:hover {background-color: rgb(26, 26, 26); color:#ffffff; outline-color: #ffffff;}
+
+#art.btn {
+    background-color: #1d1d1d;
+    color: rgb(250, 245, 236);
+    outline: solid #1d1d1d;
+    outline-width: 5px;
+    outline-offset: -1px; 
+}
+
+#art.btn:hover {background-color: rgb(250, 245, 236); color:#1d1d1d; outline-color: #1d1d1d;}
 
 .side {
     color: #d1d1d1;
@@ -143,6 +157,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+body#art {
+    background-color: rgb(238, 227, 209);
+}
+
 main#dev {
     padding-top: 11vh;
     padding-left: max(17%, calc(1vw + 135px));
@@ -174,7 +192,7 @@ h1 {
     flex-direction: row;
 }
 
-div#logo {
+#logo {
     background: none;
     border: none;
     font-family: renogare, sans-serif;
@@ -187,6 +205,11 @@ div#logo {
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
+}
+
+.art#logo {
+    color: #1d1d1d;
+    filter: drop-shadow(0 0 0.2rem rgb(160, 151, 187));
 }
 
 .path {
@@ -218,6 +241,13 @@ div#logo {
 }
 
 .point:hover {background-color: rgb(26, 26, 26)}
+
+#art.point {
+    background-color: #1d1d1d;
+    outline-color: #1d1d1d;
+}
+
+#art.point:hover {background-color: rgb(250, 245, 236)}
 
 svg {
     width: 3vh;
