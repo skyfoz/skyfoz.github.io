@@ -168,6 +168,10 @@ main#dev {
     font-family: "Consolas";
 }
 
+main#art {
+    color: #ffffff;
+}
+
 h1 {
     color: #e6e6e6;
 }
