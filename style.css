@@ -41,6 +41,20 @@ header {
     justify-content: flex-end;
 }
 
+a {
+    color: rgb(186, 196, 250);
+}
+
+.btnTxt {
+    color:rgb(178, 169, 255);
+    border: none;
+    padding: 0;
+    background-color: rgb(36, 36, 36);
+    font-family: "Consolas";
+    font-size: 1.09rem;
+    cursor: pointer;
+}
+
 .btn {
     all: unset;
     display: inline-flex;
