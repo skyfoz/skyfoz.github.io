@@ -190,7 +190,7 @@ h1 {
     color: #e6e6e6;
 }
 
-#content {
+.content {
     white-space: pre-line;
     padding-left: 2vw;
     font-size: 1.09rem;
