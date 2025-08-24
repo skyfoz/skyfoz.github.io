@@ -1,0 +1,43 @@
+var btnGauche = document.getElementById("btnGauche");
+var btnDroite = document.getElementById("btnDroite");
+var scrollableContent = document.getElementsByClassName('mainRoll')[0];
+var scrollNumber = 0;
+var canTransition = true;
+
+function scrollRight() {
+    if (scrollNumber < 2 && canTransition) {
+        scrollableContent.scroll({
+        top: 0,
+        left: scrollableContent.scrollLeft + 1500 - 16,
+        behavior: "smooth",
+        });
+        scrollNumber += 1;
+    }
+}
+
+function scrollLeft() {
+    if (scrollNumber > 0 && canTransition) {
+        scrollableContent.scroll({
+        top: 0,
+        left: scrollableContent.scrollLeft - 1500 + 16,
+        behavior: "smooth",
+        });
+        scrollNumber -= 1;
+    }
+}
+
+function endTransition()
+{
+    canTransition = true;
+}
+
+function startTransition()
+{
+    canTransition = false;
+}
+
+scrollableContent.addEventListener("transitionend", endTransition)
+scrollableContent.addEventListener("transitionstart", startTransition)
+
+btnDroite.onclick = function() {scrollLeft()};
+btnGauche.onclick = function() {scrollRight()};

@@ -173,6 +173,7 @@ body::-webkit-scrollbar {
 
 body#art {
     background-color: rgb(238, 227, 209);
+    padding-left: 2vw;
 }
 
 main#dev {
@@ -210,6 +211,13 @@ h1 {
     flex-direction: row;
 }
 
+.box#art {
+    align-items: center;
+    gap: 16px;
+    display: flex;
+    overflow: hidden;
+}
+
 #logo {
     background: none;
     border: none;
@@ -225,9 +233,103 @@ h1 {
     cursor: pointer;
 }
 
+.card {
+    width: 27vw;
+    height: 70vh;
+    border-radius: 50px;
+    background-color: #111c2e;
+}
+
+.cardContent {
+    color: rgb(238, 227, 209);
+    font-size: 1.5rem;
+    font-family: Cabin;
+    font-weight: 100;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+.letitre {
+    font-family: Cabin;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
 .art#logo {
     color: #1d1d1d;
     filter: drop-shadow(0 0 0.2rem rgb(160, 151, 187));
+}
+
+.container {
+    background-color: rgb(198, 204, 173);
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0%;
+    max-width: 70vw;
+}
+
+#btnDroite {
+    position: absolute;
+    border-radius: 30px;
+    margin-top: -80vh;
+    max-height: 80vh;
+    display: block;
+    width: 5vw;
+    height: 80vh;
+    margin-left: 0;
+    background-color: rgba(94, 94, 94, 0.212);
+}
+
+.Skg {
+    padding-top: calc(40vh - 1.5vw);
+    padding-left: 2vw;
+}
+
+#btnGauche {
+    position: absolute;
+    border-radius: 30px;
+    right: calc(30vw - 2vw - 8px);
+    margin-top: -80vh;
+    max-height: 80vh;
+    display: block;
+    width: 5vw;
+    height: 80vh;
+    background-color: rgba(94, 94, 94, 0.212);
+}
+
+.rollElement {
+    max-height: 80vh;
+    padding-left: 0;
+}
+
+#break {
+    height: 11vh;
+    width: 5px;
+    display: block;
+}
+
+.mainRoll {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    gap: 1rem;
+    overflow-x: hidden;
+}
+
+.mainRoll::-webkit-scrollbar {
+    display: none;
+}
+
+#zob {
+    display: block;
+    width: 80vw;
+    height: auto;
+    background-color: rgba(2, 2, 2, 0);
+    flex-shrink: 0;
 }
 
 .path {
@@ -240,6 +342,14 @@ h1 {
     height: 3.5vh;
     background-color: #242424;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1.art {
+    font-size: 3rem;
+    font-family: renogare;
+    font-weight: 100;
+    padding-left: 10%;
+    color:#111c2e
 }
 
 #name-path {
@@ -257,6 +367,22 @@ h1 {
     outline-offset: -0.2vh;
     outline-color: #ffffff;
 }
+
+.element {
+    border-radius: 30px;
+    padding: 0;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+img.element {
+    object-fit: cover;
+    object-position: top;
+    transition: all 200ms ease-in-out;
+}
+
+img.element:hover { transform: scale(1.5);}
 
 .point:hover {background-color: rgb(26, 26, 26)}
 
