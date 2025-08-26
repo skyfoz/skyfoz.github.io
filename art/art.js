@@ -36,8 +36,21 @@ function startTransition()
     canTransition = false;
 }
 
+function showToolTip()
+{
+    var tooltip = document.getElementsByClassName("tooltip")[0];
+    tooltip.style.visibility = "visible";
+
+    navigator.clipboard.writeText("skyfoz");
+
+    setTimeout(() => {tooltip.style.visibility = "hidden";}, 2000);
+}
+
 scrollableContent.addEventListener("transitionend", endTransition)
 scrollableContent.addEventListener("transitionstart", startTransition)
 
 btnDroite.onclick = function() {scrollLeft()};
 btnGauche.onclick = function() {scrollRight()};
+
+var discord = document.getElementById("discord");
+discord.addEventListener("click", showToolTip)
