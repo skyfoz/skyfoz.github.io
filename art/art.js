@@ -3,12 +3,15 @@ var btnDroite = document.getElementById("btnDroite");
 var scrollableContent = document.getElementsByClassName('mainRoll')[0];
 var scrollNumber = 0;
 var canTransition = true;
+const cssObj = window.getComputedStyle(scrollableContent.getElementsByClassName('rollElement')[0], null);
+var lenghtToScroll = cssObj.getPropertyValue("width");
+lenghtToScroll = lenghtToScroll.slice(0, -2);
 
 function scrollRight() {
     if (scrollNumber < 2 && canTransition) {
         scrollableContent.scroll({
         top: 0,
-        left: scrollableContent.scrollLeft + 1500 - 16,
+        left: scrollableContent.scrollLeft + lenghtToScroll - 16,
         behavior: "smooth",
         });
         scrollNumber += 1;
@@ -19,7 +22,7 @@ function scrollLeft() {
     if (scrollNumber > 0 && canTransition) {
         scrollableContent.scroll({
         top: 0,
-        left: scrollableContent.scrollLeft - 1500 + 16,
+        left: scrollableContent.scrollLeft - lenghtToScroll + 16,
         behavior: "smooth",
         });
         scrollNumber -= 1;
