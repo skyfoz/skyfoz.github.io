@@ -4,34 +4,34 @@ var scrollableContent = document.getElementsByClassName('mainRoll')[0];
 var scrollNumber = 0;
 var canTransition = true;
 const cssObj = window.getComputedStyle(scrollableContent.getElementsByClassName('rollElement')[0], null);
-var lenghtToScroll = cssObj.getPropertyValue("width");
-lenghtToScroll = lenghtToScroll.slice(0, -2);
+var lenghtToScroll = parseInt(cssObj.getPropertyValue("width"), 10);
 
 function scrollRight() {
     if (scrollNumber < 2 && canTransition) {
+        canTransition = false;
         scrollableContent.scroll({
-        top: 0,
-        left: scrollableContent.scrollLeft + lenghtToScroll - 16,
-        behavior: "smooth",
+            top: 0,
+            left: scrollableContent.scrollLeft + lenghtToScroll,
+            behavior: "smooth",
         });
         scrollNumber += 1;
+
+        setTimeout(() => canTransition = true, 500); // durée à ajuster
     }
 }
 
 function scrollLeft() {
     if (scrollNumber > 0 && canTransition) {
+        canTransition = false;
         scrollableContent.scroll({
-        top: 0,
-        left: scrollableContent.scrollLeft - lenghtToScroll + 16,
-        behavior: "smooth",
+            top: 0,
+            left: scrollableContent.scrollLeft - lenghtToScroll,
+            behavior: "smooth",
         });
         scrollNumber -= 1;
-    }
-}
 
-function endTransition()
-{
-    canTransition = true;
+        setTimeout(() => canTransition = true, 500);
+    }
 }
 
 function startTransition()
@@ -49,7 +49,6 @@ function showToolTip()
     setTimeout(() => {tooltip.style.visibility = "hidden";}, 2000);
 }
 
-scrollableContent.addEventListener("transitionend", endTransition)
 scrollableContent.addEventListener("transitionstart", startTransition)
 
 btnDroite.onclick = function() {scrollLeft()};
