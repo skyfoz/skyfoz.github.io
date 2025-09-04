@@ -16,7 +16,7 @@ function scrollRight() {
         });
         scrollNumber += 1;
 
-        setTimeout(() => canTransition = true, 500); // durée à ajuster
+        setTimeout(() => canTransition = true, 500);
     }
 }
 
