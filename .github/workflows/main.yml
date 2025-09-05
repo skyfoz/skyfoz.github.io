@@ -6,6 +6,9 @@ on:
       - "art/mainGallery/**"
       - ".github/workflow/generate-images-json.ym"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
