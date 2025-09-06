@@ -56,3 +56,28 @@ btnGauche.onclick = function() {scrollRight()};
 
 var discord = document.getElementById("discord");
 discord.addEventListener("click", showToolTip)
+
+var mainGallery = document.getElementsByClassName("gallery")[0];
+var sideGallery = document.getElementsByClassName("gallery")[1];
+
+for (img of mainGallery.children)
+{
+    var sub = img.children[0].src;
+    var query = new URLSearchParams({
+        image: sub
+    })
+    img.setAttribute('onclick', 'location.href = "./image"');
+}
+
+for (img of sideGallery.children)
+{
+    var sub = img.children[0].src;
+    var query = new URLSearchParams({
+        image: sub
+    })
+    const queryString = query.toString();
+
+    img.addEventListener('click', ()=> {
+        window.location.href = "https://skyfoz.github.io/art/image?" + queryString;
+    })
+}
