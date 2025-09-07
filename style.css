@@ -218,6 +218,14 @@ h1 {
     overflow: hidden;
 }
 
+.box#image {
+    align-items: center;
+    gap: 16px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
 #logo {
     background: none;
     border: none;
@@ -492,7 +500,7 @@ svg {
 
 #pageImage {
     max-width: 80vw;
-    max-height: 80vh;
+    max-height: 75vh;
     border-radius: 30px;
 }
 
