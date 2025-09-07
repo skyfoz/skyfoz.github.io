@@ -486,6 +486,7 @@ svg {
 
 #pageImage {
     max-width: 80vw;
+    max-width: 80vh;
     border-radius: 30px;
 }
 
