@@ -432,6 +432,7 @@ h1.art {
     max-width: 500px;
     height: 600px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 img.element {
