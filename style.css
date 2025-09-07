@@ -568,4 +568,9 @@ svg {
     h1.art {
         font-size: 2rem;
     }
+
+    .card#image {
+        max-height: 80vw;
+        padding-bottom: 1rem;
+    }
 }
