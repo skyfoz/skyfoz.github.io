@@ -484,6 +484,11 @@ svg {
     outline-offset: -1px;
 }
 
+#pageImage {
+    max-width: 80vw;
+    border-radius: 30px;
+}
+
 @font-face {
     font-family: renogare;
     src: url(/Renogare-Regular.otf);

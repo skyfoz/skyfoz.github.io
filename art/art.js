@@ -66,7 +66,11 @@ for (img of mainGallery.children)
     var query = new URLSearchParams({
         image: sub
     })
-    img.setAttribute('onclick', 'location.href = "./image"');
+    const queryString = query.toString();
+
+    img.addEventListener('click', ()=> {
+        window.location.href = "https://skyfoz.github.io/art/image?" + queryString;
+    })
 }
 
 for (img of sideGallery.children)
