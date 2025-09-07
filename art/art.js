@@ -11,7 +11,7 @@ function scrollRight() {
         canTransition = false;
         scrollableContent.scroll({
             top: 0,
-            left: scrollableContent.scrollLeft + lenghtToScroll + 16,
+            left: scrollableContent.scrollLeft + lenghtToScroll,
             behavior: "smooth",
         });
         scrollNumber += 1;
@@ -25,7 +25,7 @@ function scrollLeft() {
         canTransition = false;
         scrollableContent.scroll({
             top: 0,
-            left: scrollableContent.scrollLeft - lenghtToScroll - 16,
+            left: scrollableContent.scrollLeft - lenghtToScroll,
             behavior: "smooth",
         });
         scrollNumber -= 1;
