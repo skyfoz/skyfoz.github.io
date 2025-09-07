@@ -564,4 +564,8 @@ svg {
         overflow: hidden;
         cursor: pointer;
     }
+
+    h1.art {
+        font-size: 2rem;
+    }
 }
