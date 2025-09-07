@@ -240,6 +240,10 @@ h1 {
     background-color: #111c2e;
 }
 
+.card#image {
+    height: fit-content;
+}
+
 .cardContent {
     color: rgb(238, 227, 209);
     font-size: 1.5rem;
@@ -273,6 +277,7 @@ h1 {
 
 .container#image {
     max-width: fit-content;
+    flex-direction: row;
 }
 
 #btnDroite {

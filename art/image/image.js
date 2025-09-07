@@ -12,9 +12,10 @@ var card = document.createElement('div');
 card.setAttribute('class', 'card');
 
 var cardContent = document.createElement('div');
-cardContent.setAttribute('class', 'cardContent');
+cardContent.setAttribute('class', 'letitre');
 
 const fileName = document.createTextNode(imageUrl.split("/").pop().split(".")[0]);
 cardContent.appendChild(fileName);
+card.appendChild(document.createElement("br"));
 card.appendChild(cardContent);
 main.appendChild(card);
