@@ -511,7 +511,7 @@ svg {
 
 @font-face {
     font-family: Cabin;
-    src: url(https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,700&display=swap);
+    src: url(./Cabin.ttf);
 }
 
 @font-face {
