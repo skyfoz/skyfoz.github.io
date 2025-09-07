@@ -9,6 +9,7 @@ var main = document.getElementsByClassName('box')[0];
 main.appendChild(para);
 
 var card = document.createElement('div');
+card.setAttribute('id', 'image');
 card.setAttribute('class', 'card');
 
 var cardContent = document.createElement('div');
