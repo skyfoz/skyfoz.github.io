@@ -570,7 +570,8 @@ svg {
     }
 
     .card#image {
-        max-width: 80vw;
+        width: 80vw;
+        max-width: none;
         padding-bottom: 1rem;
     }
 }
