@@ -275,11 +275,6 @@ h1 {
     max-width: 70vw;
 }
 
-.container#image {
-    max-width: fit-content;
-    flex-direction: row;
-}
-
 #btnDroite {
     position: absolute;
     border-radius: 30px;

@@ -5,7 +5,7 @@ const para = document.createElement("img");
 para.setAttribute("src", imageUrl);
 para.setAttribute("id", "pageImage");
 
-var main = document.getElementsByClassName('container')[0];
+var main = document.getElementsByClassName('box')[0];
 main.appendChild(para);
 
 var card = document.createElement('div');
