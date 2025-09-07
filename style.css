@@ -242,6 +242,7 @@ h1 {
 
 .card#image {
     max-height: fit-content;
+    padding-bottom: 1rem;
 }
 
 .cardContent {

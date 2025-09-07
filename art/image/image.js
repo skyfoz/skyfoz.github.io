@@ -15,8 +15,14 @@ card.setAttribute('class', 'card');
 var cardContent = document.createElement('div');
 cardContent.setAttribute('class', 'letitre');
 
-const fileName = document.createTextNode(imageUrl.split("/").pop().split(".")[0]);
+const fileName = document.createTextNode(imageUrl.split("/").pop().split(".")[0].split("_")[0]);
+const year = document.createTextNode(imageUrl.split("/").pop().split(".")[0].split("_")[1]);
+
+var yearElement = document.createElement('div');
+yearElement.setAttribute('class', "cardContent");
+yearElement.appendChild(year)
+
 cardContent.appendChild(fileName);
-card.appendChild(document.createElement("br"));
+cardContent.appendChild(yearElement)
 card.appendChild(cardContent);
 main.appendChild(card);
