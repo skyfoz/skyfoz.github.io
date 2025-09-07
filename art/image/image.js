@@ -12,7 +12,7 @@ var card = document.createElement('div');
 card.setAttribute('class', 'card');
 
 var cardContent = document.createElement('div');
-cardContent('class', 'cardContent');
+cardContent.setAttribute('class', 'cardContent');
 
 const fileName = document.createTextNode(imageUrl.split("/").pop().split(".")[0]);
 cardContent.appendChild(fileName);
