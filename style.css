@@ -524,12 +524,40 @@ svg {
         font-size: 2rem;
     }
 
+    .card {
+    width: 85vw;
+    height: 70vh;
+    border-radius: 50px;
+    background-color: #111c2e;
+}
+
+    .container {
+        max-width: 95vw;
+    }
+
+    #btnGauche {
+        right: calc(3vw);
+        width: 10vw;
+    }
+
+    #btnDroite {
+        width: 10vw;
+    }
+
+    .box#art {
+        display: block;
+    }
+
     .firstrow {
         font-size: 2rem;
     }
     
     .menu {
         display: block;
+    }
+
+    .rollElement {
+        max-width: 95vw;
     }
 
     .side {
