@@ -100,7 +100,7 @@ function getCaretPosition() {
 
   const contentTop = parseFloat(window.getComputedStyle(document.getElementsByClassName('innerContent')[0]).top) || 0;
   const contentHeight = parseFloat(window.getComputedStyle(document.getElementsByClassName('innerContent')[0]).height) || 0;
-  outline.style.top = (contentTop + posLines * 22 - contentHeight) + "px";
+  outline.style.top = (contentTop + posLines * 22 - contentHeight - 22) + "px";
 }
 
 
