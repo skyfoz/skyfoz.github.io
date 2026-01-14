@@ -301,6 +301,13 @@ h1 {
     padding-left: 2vw;
 }
 
+#droits {
+    color: #646464;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cabin;
+}
+
 #btnGauche {
     position: absolute;
     border-radius: 30px;
